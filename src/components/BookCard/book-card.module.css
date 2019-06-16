@@ -1,0 +1,46 @@
+.card {
+  background-color: #ffffff;
+  box-shadow: -6px 0px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 20rem;
+  min-height: 20rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.cardImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 15rem;
+}
+
+.cardTitle, .cardSubtitle {
+  color: #4f2c88;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.cardSubtitle {
+  margin-top: 0;
+  font-size: .9rem;
+}
+
+.cardPublisher {
+  background-color: gray;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  bottom: -10px;
+  padding: .3rem;
+  position: absolute;
+  right: -10px;
+  width: fit-content;
+}
+
+.grow { 
+  transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+  transform: scale(1.1); 
+}
