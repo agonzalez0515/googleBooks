@@ -1,0 +1,25 @@
+.header {
+  margin-top: 6rem;
+}
+
+.headerTitle {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.headerTitle span {
+  display: block;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .headerTitle {
+    font-size: 3.5rem;
+  }
+
+  .headerTitle span {
+    font-size: 1.6rem;
+  }
+}

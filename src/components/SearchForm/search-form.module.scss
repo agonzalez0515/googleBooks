@@ -28,9 +28,10 @@
   height: 1rem;
   padding: 0.8em 0.5em;
   transition: border-color 0.25s;
+  width: 10rem;
 }
 
- .formInput:focus {
+.formInput:focus {
    border: 2px solid #7722f4;
    outline: none !important;
 }
