@@ -1,48 +1,53 @@
-.containerSearch {
+@import '../../assets/mixins';
+
+.container {
   align-items: center;
   display: flex;
   height: 15rem;
   justify-content: center;
 }
 
-.formSearch {
+.form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.formSearch label {
-  font-size: 1rem;
+  
+  label {
+    font-size: 1rem;
+  }
 }
 
 .containerInput {
   display: flex;
 }
 
-.formInput {
+.input {
   border-radius: 6px 0 0 6px;
   border: 2px solid #7722f4;
   color: black;
   font-size: 1.35em;
   font-weight: 400;
-  height: 1rem;
+  height: .5rem;
   padding: 0.8em 0.5em;
   transition: border-color 0.25s;
   width: 10rem;
+
+  @include for-tablet-portrait-up {
+    width: 25rem;
+  }
+
+  &:focus {
+    border: 2px solid #7722f4;
+    outline: none !important;
+  }
 }
 
-.formInput:focus {
-   border: 2px solid #7722f4;
-   outline: none !important;
-}
-
-.formSubmit {
+.submit {
   background: #7722f4;
   border: none;
   border-radius: 0 6px 6px 0;
   color: white;
   font-size: 1.3rem;
-  height: 3.4rem;
   text-transform: uppercase;
   width: 7rem;
 }
