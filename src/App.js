@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import BookCard from './components/BookCard/BookCard'
 import SearchForm from './components/SearchForm/SearchForm'
 import Header from './components/Header/Header';
-import './App.css'
+import bookLover from './assets/bookLover.svg'
+import './assets/App.scss'
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('')
-  const [booksRes, setBooksRes] = useState([])
+  const [booksRes, setBooksRes] = useState()
 
   const handleInput = (e) => setSearchTerm(e.target.value)
   
@@ -19,13 +20,21 @@ const App = () => {
     })
     .catch(err => console.log(err))
   }
-  
+
+  const onEnter = (e) => {
+    if(e.keyCode === 13){
+      e.preventDefault()
+       handleSubmit()
+    }
+ }
+
   return (
     <div className="app">
       <Header />
-      <SearchForm handleInput={handleInput} handleSubmit={handleSubmit} searchTerm={searchTerm} />
-      <div className='container__cards'>
-        { booksRes.map((volume) => <BookCard details={volume} />) }
+      <SearchForm handleInput={handleInput} handleSubmit={handleSubmit} searchTerm={searchTerm} keyPress={onEnter} />
+      <div className='cards'>
+        { booksRes ? booksRes.map((volume) => <BookCard key={volume.id} details={volume} />) :
+         <img src={bookLover} alt="Girl reading and sitting on stack of books" /> }
       </div>
     </div>
   );
