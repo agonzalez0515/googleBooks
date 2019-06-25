@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <header
+    class="header"
+  >
+    <h1
+      class="headerTitle"
+    >
+      Books are a uniquely portable magic.
+      <span>
+        - Stephen King
+      </span>
+    </h1>
+  </header>
+</DocumentFragment>
+`;
