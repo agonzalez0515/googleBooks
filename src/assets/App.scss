@@ -34,7 +34,7 @@ p, label, button {
   flex-wrap: wrap;
   justify-content: space-evenly;
 
-  img {
+   .placeholderImg {
     height: 16rem; 
 
     @include for-tablet-landscape-up {
