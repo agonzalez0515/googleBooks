@@ -16,6 +16,8 @@ https://sharp-raman-e171b0.netlify.com/
 ## Available Scripts
 In the project directory, you can run:
 
+`npm install` to install dependencies 
+
 `npm start` to start dev mode
 
 `npm test` to run available tests
