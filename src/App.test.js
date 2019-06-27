@@ -9,10 +9,13 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div)
 })
 
-it('fetches books', () => {
+// it('fetches books', () => {
 
-  
+//   const {getByText} = render(<App />)
+//   const button = getByText('Submit')
+//   fireEvent.click(button)
 
+//   expect()
+// })
 
-})
-
+// TODO: finish tests
