@@ -14,9 +14,7 @@ const App = () => {
   const handleSubmit = () => {
     fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&key=${process.env.REACT_APP_BOOKS_KEY}`)
     .then(res => res.json())
-    .then(volumes => {
-      setBooksRes(volumes.items)
-    })
+    .then(volumes => setBooksRes(volumes))
     .catch(err => console.log(err))
   }
 

@@ -4,7 +4,6 @@ import BookCard from '../BookCard/BookCard'
 
 
 const BookList = ({books}) => {
-  console.log(books.totalItems)
   if(books.totalItems > 0) {
     return books.items.map(book => {
       return <BookCard 
