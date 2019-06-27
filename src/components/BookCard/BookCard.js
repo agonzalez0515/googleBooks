@@ -13,7 +13,7 @@ const BookCard = ({details}) => {
       {subtitle && <h3 className={styles.cardSubtitle}>{subtitle}</h3>}
       {authors && <p className={styles.authors}>by {authorsNames(authors)}</p>}
       {publisher && <p className={styles.cardPublisher}>{publisher}</p>}
-      <p><Link className={styles.linkIcon} /><a href={infoLink} target="_blank" rel="noopener noreferrer">More information</a></p>
+      <p className={styles.link}><Link className={styles.linkIcon} /><a href={infoLink} target="_blank" rel="noopener noreferrer">More information</a></p>
     </div>
   )
 }
