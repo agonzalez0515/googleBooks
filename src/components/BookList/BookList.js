@@ -1,6 +1,6 @@
 import React from 'react'
-import noResults from '../../assets/noResults.svg'
 import BookCard from '../BookCard/BookCard'
+import NoResults from '../NoResults/NoResults';
 
 
 const BookList = ({books}) => {
@@ -14,14 +14,9 @@ const BookList = ({books}) => {
   }
   else {
     return (
-      <div>
-        <img src={noResults} className='placeholderImg' alt='Empty clipboards' />
-        <p style={{textAlign: 'center', fontSize: '1.3rem'}}>No books found. Try again!</p>
-      </div>
+      <NoResults />
     )
   }
 }
  
 export default BookList
-
-// TODO: Refactor no search results into component

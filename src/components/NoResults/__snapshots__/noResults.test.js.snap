@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div>
+    <img
+      alt="Empty clipboards"
+      class="placeholderImg"
+      src="noResults.svg"
+    />
+    <p
+      style="text-align: center; font-size: 1.3rem;"
+    >
+      No books found. Try again!
+    </p>
+  </div>
+</DocumentFragment>
+`;
