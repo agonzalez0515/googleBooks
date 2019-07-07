@@ -24,23 +24,17 @@ In the project directory, you can run:
 
 
 
-
-
-
 ---
 
-### ToDo: 
 
-[ ] Finish tests
-
-[ ] Pixel push the card component
-
-[ ] Refactor 'no search results' into component
-
-[ ] Use service worker to cache search results for offline viewing (nice to have)
-
-[ ] Review accessibility
-
+## Features/Requirements:
+- Type in a query and display a list of books matching that query. 
+- Each item in the list should include the book's author, title, and publishing company, as well as a picture of the book.
+- From each list item, you should also be able to navigate to more information about the book, this could link out to an external site with more information about that particular book.
+- Use enter button to submit search
+- Responsive
+- Handles no results and no book image found with fallbacks
+- 
 
 
  
