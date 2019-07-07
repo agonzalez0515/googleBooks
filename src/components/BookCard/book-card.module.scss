@@ -5,8 +5,7 @@
   box-shadow: -6px 0px 20px rgba(0, 0, 0, 0.1);
   margin: 20px;
   width: 20rem;
-  min-height: 20rem;
-  padding: 2rem;
+  min-height: 30rem;
   position: relative;
 }
 
@@ -15,12 +14,28 @@
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 15rem;
+  margin: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  &:hover {
+    .link {
+      display: flex;
+    }
+  }
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cardTitle, .cardSubtitle {
   color: $grape;
   font-size: 1.1rem;
-  margin-top: 1rem;
+  margin: 0 2rem;
   text-align: center;
 }
 
@@ -39,26 +54,23 @@
   border-top-right-radius: 5px;
   bottom: -10px;
   color: white;
+  margin: 0;
   padding: .3rem;
   position: absolute;
   right: -10px;
   width: fit-content;
 }
 
-.linkIcon {
-  width: 8%;
-  vertical-align: middle;
-
-  path {
-    fill: lightslategray;
-  }
-}
 
 .link {
-  bottom: -10px;
+  display:none;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  isolation: isolate;
+  background-color: #9183a9;
+  border-radius: 2px;
   padding: .3rem;
-  position: absolute;
-  right: -10px;
 }
 
 .grow { 
