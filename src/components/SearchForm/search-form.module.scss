@@ -38,7 +38,7 @@
   }
 
   &:focus {
-    border: 2px solid $grape;
+    border: 2px solid $hotpink;
     outline: none !important;
   }
 }
@@ -51,4 +51,9 @@
   font-size: 1.3rem;
   text-transform: uppercase;
   width: 7rem;
+
+  &:focus {
+    background-color: $hotpink;
+    outline: none !important;
+  }
 }
