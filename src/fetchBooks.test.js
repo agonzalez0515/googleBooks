@@ -14,6 +14,6 @@ describe('testing api call', () => {
     })
   
     expect(fetch.mock.calls.length).toEqual(1)
-    expect(fetch.mock.calls[0][0]).toEqual('https://www.googleapis.com/books/v1/volumes?q=harry potter&key=AIzaSyAPFGh3tQZET-EnMos5-Lw9bpfJjzg9pe4')
+    expect(fetch.mock.calls[0][0]).toEqual(`https://www.googleapis.com/books/v1/volumes?q=harry potter&key=${process.env.REACT_APP_BOOKS_KEY}`)
   })
 })
